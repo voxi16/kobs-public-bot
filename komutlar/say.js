@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
  
     const embed = new Discord.RichEmbed()
         .setColor("RED")
-    .setTitle(`Say Sistemi`)
+    .setTitle(`Yağız`)
         .addField("Sunucudaki üye sayısı", message.guild.memberCount)
         .addField("Çevrimiçi üye sayısı", message.guild.members.filter(m => !m.user.bot && m.user.presence.status !== "offline").size)
         .addField("Seslideki üye sayısı", count)
